@@ -17,10 +17,10 @@ public class FrogSimulation
 	{ 
 	for(int i=0;i<maxHops;i++){
 		distance1+=hopDistance();
-	if(goalDistance<=distance1)
-		return true; 
 	if(distance1<0)
 		return false; 
+	if(goalDistance<=distance1)
+		return true; 
 	}
 		return false; 	
 
