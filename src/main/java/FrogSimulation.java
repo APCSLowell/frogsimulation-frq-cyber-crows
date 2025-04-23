@@ -18,10 +18,12 @@ public class FrogSimulation
 	private int distance1=0; 
 	for(int i=0;i<maxHops;i++){
 		distance1+=hopDistance();
-	if(goalDistance<=distance1)
+	if(goalDistance<=distance1){
 		return true; 
-	else if(distance1<0)
+	}
+	else if(distance1<0){
 		return false;
+	}
 	}
 		return false; 	
 
@@ -29,13 +31,14 @@ public class FrogSimulation
 	
 	public double runSimulations(int num)
 	{ 
-	private double count=0; 
+	double count=0.0; 
 	for(int i=0; i<num; i++){
 		if(simulate()==true)
 			count++; 
 	}
 		return count/num; 
 	}
+	
 	
 	
 	//ignore the code below this line
